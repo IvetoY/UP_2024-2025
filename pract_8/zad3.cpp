@@ -41,4 +41,6 @@ int main()
     std::cin >> row >> col;
     readMatrix(matrix, row, col);
     std::cout << f(matrix, col, row);
+    return 0;
 }
+

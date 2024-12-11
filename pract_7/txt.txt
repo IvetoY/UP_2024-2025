@@ -1,0 +1,8 @@
+strlen()
+strcpy()
+strncpy()
+strcat()
+strncat()
+/0
+strcmp()-vrushta int, sravnqva gi
+strncmp()

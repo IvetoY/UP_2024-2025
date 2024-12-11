@@ -7,7 +7,7 @@ void readMatrix(int matr[ROWS][COL], const std::size_t rows, const std::size_t c
         }
     }
 }
-void printMatrix(int matr[ROWS][COL], const std::size_t rows, const std::size_t col){
+void printMatrixA(int matr[ROWS][COL], const std::size_t rows, const std::size_t col){
     for(int j=col-1;j>=0;j--){//tuk
     for(int i=rows-1;i>=0;i--){
         std::cout<<matr[i][j]<<" ";
@@ -24,11 +24,31 @@ void printMatrix(int matr[ROWS][COL], const std::size_t rows, const std::size_t 
 //8 5 2
 // 7 4 1
 
+void printMatrixB(int matr[ROWS][COL], const std::size_t rows, const std::size_t col){
+for(int i=0;i<col;i++){
+    int i1=0,j=i;
+    while(j>=0 && i1<rows){
+        std::cout<<matr[i1][j]<<" ";
+        j--;
+        i1++;
+    }
+}
+for(int j=1;j<rows;j++){
+    int i1=j,j1=col-1;
+    while(i1<rows && j1>=0){
+        std::cout<<matr[i1][j1]<<" ";
+        i1++;
+
+        j1--;
+    }
+}
+}
 int main (){
 int matrix[ROWS][COL];
 int row,col;
 std::cin>>row>>col;
 readMatrix(matrix,row,col);
-printMatrix(matrix,row,col);
+//printMatrixA(matrix,row,col);
+//printMatrixB(matrix,row,col);
 return 0;
 }

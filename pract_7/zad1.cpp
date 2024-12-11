@@ -34,6 +34,6 @@ int main (){
     std::cin.getline(b,255);
    // std::cout<<strlen1(a);
    // std::cout<<strcamp1(a,b);
-   strcat1(a,b);
+   //strcat1(a,b);
     return 0;
 }

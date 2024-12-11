@@ -25,7 +25,6 @@ void removeDuplicates(char a[]){
 int main (){
     char a[256];
     std::cin.getline(a,255);
-    std::cout<<std::endl;
     removeDuplicates(a);
     return 0;
 }
