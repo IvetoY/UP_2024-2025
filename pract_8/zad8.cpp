@@ -11,7 +11,7 @@ int main (){
     }
     int max_strlen=1;
     for(int i=0;i<size;i++){
-       if(max_strlen<strlen(array[i])) 
+       //if(max_strlen<strlen(array[i])) 
     }
 
     return 0;
