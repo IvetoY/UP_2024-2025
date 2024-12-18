@@ -24,5 +24,5 @@ int row,col;
 std::cin>>row>>col;
 readMatrix(matrix,row,col);
 std::cout<<sumElementsOfTheMatrix(matrix,row,col);
-
+return 0;
 }
